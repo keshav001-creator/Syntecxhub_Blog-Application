@@ -1,6 +1,6 @@
-import Post from "../models/Post.js";
+const Post = require("../models/post.js");
 
-export const createPost = async (req, res) => {
+const createPost = async (req, res) => {
 
     try {
 
@@ -33,7 +33,7 @@ export const createPost = async (req, res) => {
 };
 
 
-export const getPosts = async (req, res) => {
+const getPosts = async (req, res) => {
 
     try {
 
@@ -56,7 +56,7 @@ export const getPosts = async (req, res) => {
 };
 
 
-export const getPost = async (req, res) => {
+const getPost = async (req, res) => {
 
     try {
 
@@ -88,7 +88,7 @@ export const getPost = async (req, res) => {
 
 };
 
-export const updatePost = async (req, res) => {
+const updatePost = async (req, res) => {
 
     try {
 
@@ -141,7 +141,7 @@ export const updatePost = async (req, res) => {
 };
 
 
-export const deletePost = async (req, res) => {
+const deletePost = async (req, res) => {
 
     try {
 

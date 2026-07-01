@@ -1,9 +1,10 @@
-import express from "express";
-import cors from "cors";
-import cookieParser from "cookie-parser";
+const  express =require("express");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
 
-import authRoutes from "./routes/authRoutes.js";
-import postRoutes from "./routes/postRoutes.js";
+const authRoutes = require("./src/routes/authRoutes.js");
+const postRoutes = require("./src/routes/postRoutes.js");
+
 
 const app = express();
 
@@ -17,4 +18,4 @@ app.use("/api/auth", authRoutes);
 
 app.use("/api/posts", postRoutes);
 
-export default app;
+module.exports = app;

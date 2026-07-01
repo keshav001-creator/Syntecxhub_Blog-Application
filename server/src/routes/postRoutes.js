@@ -1,6 +1,6 @@
 import express from "express";
 
-import {
+const {
 
 createPost,
 
@@ -12,7 +12,7 @@ updatePost,
 
 deletePost
 
-} from "../controllers/postController.js";
+} = require("../controller/postController.js");
 
 import authMiddleware from "../middleware/authMiddleware.js";
 
@@ -58,4 +58,4 @@ deletePost
 
 );
 
-export default router;
+module.exports = router;
